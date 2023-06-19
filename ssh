@@ -1,0 +1,4 @@
+ssh-agent bash
+sudo cp ec2-key.pem ~/.ssh/
+ssh-add ~/.ssh/ec2-key.pem
+export ANSIBLE_HOST_KEY_CHECKING=False
